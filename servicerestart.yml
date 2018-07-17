@@ -2,7 +2,9 @@
 - name: Restart sssd service
   hosts: all
   tasks:
-    - name: Restart service sssd, in all cases
+    - name: Restart service sssd
       service:
         name: sssd
         state: restarted
+    - name: Check status of service sssd
+      shell: service sssd status
