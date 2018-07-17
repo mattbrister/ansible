@@ -2,7 +2,7 @@
 - name: Restart sssd service
   hosts: all
   tasks:
-- name: restarting sssd
+- name: Restart service sssd, in all cases
   service:
     name: sssd
     state: restarted
