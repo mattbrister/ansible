@@ -6,5 +6,3 @@
       service:
         name: sssd
         state: restarted
-    - name: Check status of service sssd
-      shell: service sssd status
