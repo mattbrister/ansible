@@ -3,6 +3,6 @@
   hosts: all
   tasks:
 - name: restarting sssd
-   service:
+  service:
     name: sssd
     state: restarted
