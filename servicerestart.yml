@@ -6,3 +6,4 @@
       service:
         name: sssd
         state: restarted
+      when: GO_NOGO == "YES"
